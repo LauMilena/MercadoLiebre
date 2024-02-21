@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing : border-box
+}
+
+body{
+    font-family : 'Roboto';
+    background-color: #ebebeb;
+
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px 0px 0px;  
+    
+}
+.logo{
+    width: 25vw;
+}   
+
+.formulario-registro{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+}
+.perfil{   
+    
+    margin: 20px;
+    padding: 10px;
+    margin-left: -80px;
+
+
+    
+}       
+
+.categorias{        
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5px;
+    margin-left: 20px;
+    padding: 5px; 
+}
+
+.caja{
+    border:none;    
+    border-radius: 5%;
+    width: 250%;
+    padding: 15px;
+
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 15px;
+    width: 80%;
+}

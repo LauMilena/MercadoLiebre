@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing : border-box;
+    
+}
+
+body{
+    font-family : 'Roboto';
+    background-color: #ebebeb;
+
+
+}
+
+.main-header{
+    background-color: #EAC926;
+    padding: 20px 0px 0px;
+    margin: 0;
+}
+
+.main-header-top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+}
+
+
+.logo{
+    max-width: 30%;
+}
+
+.Buscador{
+    width: 30%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding: 15px;
+    border: none;
+    flex-direction: row;    
+}
+.fa-magnifying-glass{
+    position: absolute;
+    color: black; 
+    border: 0;
+    border-radius: 7px;
+    right: 5px;
+    margin: auto;
+    background-color:white;
+    padding:12px;
+    
+}   
+
+.copy-header{
+    font-weight: 300;
+    width: 50%
+    text-align: flex-end;
+    
+}
+
+.main-header-bottom-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-header-bottom-bar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin:5px 40px;
+    padding: 0;       
+
+}
+.main-header-bottom-bar ul li{
+    margin: 2px;
+}
+
+
+.main-header-bottom-bar a{
+    text-decoration: none;
+    color: #666666;
+    display: inline-block;
+    padding: 5px;
+    font-size: 17px;
+    
+}
+
+.caja-login{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+      
+}
+
+input{
+    border: none;
+    border-radius: 5%;
+    width: 300%;
+    margin:15px;
+    padding: 12px;
+    align-items: center;
+}
+.enviar{    
+    width: 40%;
+    margin:15px;
+    padding: 12px;
+    background-color: #03264C;
+    color: #ebebeb; 
+    border: none;
+    border-radius: 5%;
+}
+
+
+footer {
+    padding: 20px;
+    margin: 10px;
+    text-align: center; 
+} 
+
+.credit-card, .gift, .security{
+    display: block;
+    font-size: 2em;
+}
