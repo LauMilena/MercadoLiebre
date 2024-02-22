@@ -7,7 +7,7 @@
 
 body{
     font-family : 'Roboto';
-    background-color: #ebebeb;
+    background-color: white;
 
 
 }
@@ -27,7 +27,7 @@ body{
 
 
 .logo{
-    max-width: 30%;
+    max-width: 30vw;
 }
 
 .Buscador{
@@ -48,13 +48,14 @@ body{
     right: 5px;
     margin: auto;
     background-color:white;
-    padding:12px;
+    padding:11.5px;
     
 }   
 
 .copy-header{
     font-weight: 300;
-    width: 50%
+    width: 50%;
+    margin-left: 70px;
     text-align: flex-end;
     
 }
@@ -87,38 +88,57 @@ body{
     
 }
 
-.caja-login{
+.form{
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-right: 25%;
+    margin-top: 0;
+    margin-bottom: 15%;
+    margin-left: 0%;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.caja-login{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
-    margin: auto;
+    margin: 10px;
+    margin-left: -360px;
+    padding: 5px; 
       
 }
 
 input{
     border: none;
-    border-radius: 5%;
-    width: 300%;
+    border-radius: 5px;
+    width: 280%;
     margin:15px;
+    margin-left: 5px;
     padding: 12px;
     align-items: center;
 }
-.enviar{    
-    width: 40%;
+.enviar{  
+    
+    width: 130%;
     margin:15px;
+    margin-right:5px;
+    margin-left: 150px;
     padding: 12px;
     background-color: #03264C;
     color: #ebebeb; 
     border: none;
-    border-radius: 5%;
+    border-radius: 5px;
+   
 }
 
 
 footer {
-    padding: 20px;
-    margin: 10px;
-    text-align: center; 
+    padding: 10px;
+    margin: 10px;  
+    text-align: center;  
 } 
 
 .credit-card, .gift, .security{

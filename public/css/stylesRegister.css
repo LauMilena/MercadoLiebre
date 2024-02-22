@@ -6,8 +6,19 @@
 
 body{
     font-family : 'Roboto';
-    background-color: #ebebeb;
+    background-color: white;
 
+}
+
+.formulario-completo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25%;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    margin-left: 30%;
+    background-color: #ebebeb;
 }
 
 .main-header {
@@ -22,19 +33,19 @@ body{
 .formulario-registro{
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
-    margin: 15px;
-    padding: 15px;
+    margin: 10px;
+    padding: 10px;
+    margin-right: 20%;
 }
+
 .perfil{   
-    
+    display:flex;
+    justify-content: space-between;
     margin: 20px;
     padding: 10px;
-    margin-left: -80px;
-
-
-    
+        
 }       
 
 .categorias{        
@@ -42,15 +53,15 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 5px;
+    margin: 10px;
     margin-left: 20px;
     padding: 5px; 
 }
 
 .caja{
     border:none;    
-    border-radius: 5%;
-    width: 250%;
+    border-radius: 10px;
+    width: 100%;
     padding: 15px;
 
 }
@@ -61,4 +72,14 @@ body{
     margin: 10px;
     padding: 15px;
     width: 80%;
+    font-size: 20px;
+}
+
+button{
+    background-color: #1259c3;
+    color: #ebebeb;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
 }
