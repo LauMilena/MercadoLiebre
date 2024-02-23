@@ -88,7 +88,7 @@ button{
     width: 40%;
 }
 input:invalid + span{
-    display: inline-blok;
+    display: inline-block;
     color: black;
 }
 
