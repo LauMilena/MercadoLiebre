@@ -131,7 +131,10 @@ input{
     color: #ebebeb; 
     border: none;
     border-radius: 5px;
-   
+}
+
+.enviar:hover{
+    background-color: #0022AA;
 }
 
 
@@ -145,3 +148,15 @@ footer {
     display: block;
     font-size: 2em;
 }
+
+.footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+.credit-card:hover, .gift:hover, .security:hover{
+    color:#39b54a;
+} 

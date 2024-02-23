@@ -1,5 +1,5 @@
 * {
-    margin: 0px;
+    margin:0;
     padding: 0px;
     box-sizing : border-box
 }
@@ -7,39 +7,37 @@
 body{
     font-family : 'Roboto';
     background-color: #ebebeb;
-   
+    
 
 }
 
-label {
-    display: block;
-    font: 1rem 'Roboto';
-  }
-  
-input {
-    margin:1rem 0; 
-    width: 80%; 
-    position: relative;
-    border-radius: 5px;
-    border: none;
-    background-color: #ebebeb;
+
+.buscador{
+    display: flex;
+    max-width: 400px ; /* Ajusta el ancho máximo según tus necesidades */
+    margin:auto; /* Centra el contenedor en la pantalla */
+
+}
+
+#site-search {
+    flex: 1; /* Hace que el input ocupe todo el espacio disponible */
     padding: 10px;
-    
-  }
-
-
-
- #site-search{
-    display:flex;
-    justify-content: space-between;
-    font-size: 16px;
-    color: #ebebeb;
-    width: 80%;
-    margin: auto;
-    margin-left: 50px;
-    border-radius:5px;
     border: none;
-  }
+    border-radius: 5%;
+
+    
+}
+
+button {
+    padding: 8px;
+    background-color: #fff;
+    color: #666666;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+
+}
+
 
   .main-header-top-bar{
     display:flex;
@@ -115,7 +113,7 @@ p{
 .main-header {
     background-color: #EAC926;
     padding: 20px 0px 0px;
-    max-width: 2000px;
+    
 
 }
 
@@ -197,10 +195,21 @@ main {
 .img{
     width: 90%;
     
-}
-  
+} 
 
-@media (min-width:100px) and (max-width: 360px){
+.footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+.credit-card:hover, .gift:hover, .security:hover{
+    color:#39b54a;
+} 
+
+@media (min-width:100px){
    
     .descripciones{ 
         display:none;      
@@ -211,21 +220,37 @@ main {
     .main-header-bottom-bar ul{ 
         display: none;
     }   
-    #site-search{
-        width: 35vw;
-        margin-right: 20px;
+    
+    /*input {
+        margin:1rem 0; 
+        width: 80%; 
+        position: relative;
+        border-radius: 5px;
+        border: none;
+        background-color: #ebebeb;
+        padding: 10px;
         
+      }
 
-    }
-    .fa-magnifying-glass{
+    .lupa{
+        display:block;
         position: absolute;
         color: black;
         margin: -30px;
-        margin-right:15px;
-        padding-left:178px;
+        margin-right:250px;
+        margin-top: -12px;
+        padding-left:30px;
         padding-right: 15px;
         
       } 
+
+    .buscador{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+    }*/
+
     .main{
         
         display: flex;
@@ -245,7 +270,7 @@ main {
 
 }
 
-@media (min-width:361px) and (max-width:768px){
+@media (min-width:361px) {
     .producto1, .producto2, .producto3, .producto4{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
@@ -271,24 +296,42 @@ main {
     .logo{
         width: 35vw;
         margin:15px;
+        margin-left: 0px;
     }
-
-    #site-search{
-        width: 35vw;
-        margin-right: 20px;
+    /*
+    input {
+        margin: 0;
+        margin-right: 15px;
+        width: 80%; 
+        position: relative;
+        border-radius: 5px;
+        border: none;
+        background-color: #ebebeb;
+        padding: 10px;
         
+      }
 
-    }
-
-    .fa-magnifying-glass{
+    .lupa{
+        display:block;
         position: absolute;
         color: black;
         margin: -30px;
-        margin-right:15px;
-        padding-left:180px;
-        padding-right: 15px;
+        margin-right:40px;
+        margin-top: 4px;
+        padding-left:20vw;
+        padding-right: 0px;
         
-      }
+      } 
+
+    .buscador{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        margin-left: 15px;
+    }
+    */
+   
     .main-header-top-bar{
         flex-wrap: wrap;
         justify-content: space-between;
@@ -297,7 +340,7 @@ main {
     .copy-header{
 
         font-size: 16px;
-        align-self: center;
+        text-align: center;
         
     }
 
@@ -342,13 +385,42 @@ main {
 
     .logo{
         width: 30vw;
-        margin:15px;
+        margin:10px;
     }
+    /*
+    input {
+        margin: 0;
+        margin-right: 15px;
+        width: 90%; 
+        position: relative;
+        border-radius: 5px;
+        border: none;
+        background-color: #ebebeb;
+        padding: 10px;
+        
+      }
 
-    #site-search{
-        width: 30vw;
-        margin:0px;
+    .lupa{
+        display:block;  
+        position: absolute;
+        color: black;
+        margin: -15px;
+        margin-right:10px;
+        margin-top: 4px;
+        padding-left:0px;
+        padding-right:10px;
+        
+      } 
+
+    .buscador{
+        display:flex;   
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        margin-left: 15px;
     }
+    */
+
     .main-header-top-bar{
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -368,7 +440,19 @@ main {
         max-width: 45%;
         padding: 10px;
     }
-}   
+
+    .producto1:hover, .producto2:hover, .producto3:hover, .producto4:hover{
+        box-shadow: 0px 0px 25px rgb(40, 40, 40);
+        .descripciones{
+            display:block;
+            
+        }
+    
+    }  
+}  
+
+  
+
 
 @media (min-width:1201px){
     .producto1, .producto2, .producto3, .producto4{
@@ -394,17 +478,49 @@ main {
         width: 30vw;
         margin:15px;
     }
+    /*
+input {
+        margin: 0;
+        margin-right: 15px;
+        max-width: 100%; 
+    
+        position: relative;
+        border-radius: 5px;
+        border: none;
+        background-color: #ebebeb;
+        padding: 10px;
+        
+      }
 
-    #site-search{
-        width: 30vw;
-        margin:0px;
-    }
+    .lupa{
+        display:block;  
+        position: absolute;
+        color: black;
+        margin: -15px;
+        margin-right:10px;
+        margin-top: 4px;
+        padding-left:0px;
+        padding-right:10px;
+        
+      } 
+
+    .buscador{
+        display:flex;   
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        margin-left: 15px;
+        
+    }*/
     .main-header-top-bar{
         flex-wrap: nowrap;
         justify-content: space-between;
     }
     .copy-header{
         font-size: 18px;
+        margin:auto;
+        margin-right: 30px;
+        text-align: right;
     }
     .main{
     
@@ -418,4 +534,21 @@ main {
         max-width: 23%;
         padding: 10px;
     }
+
+    .producto1:hover, .producto2:hover, .producto3:hover, .producto4:hover{
+        box-shadow: 0px 0px 25px rgb(40, 40, 40);
+        .descripciones{
+            display:block;
+            
+        }
+        .fa-truck{
+            background-color: red;
+            transform:rotate(-90deg);
+            transition: all, 2s;
+           
+        }
+    
+    }
 } 
+
+
