@@ -20,15 +20,18 @@
     <form class = "formulario-completo" action="/register" method="POST">
         <section class="formulario-registro">
         <label> 
-            <input class ="caja" type="text" name="nombreyApellido" placeholder ="Nombre y Apellido">
+            <input class ="caja" type="text" name="nombreyApellido" placeholder ="Nombre y Apellido" required pattern="[A-Za-z]+" title="Solo se permiten letras">
+            <span>Digite su nombre completo</span>
         </label>
         <br>
         <label> 
-            <input class ="caja" type="text" name="nombreUsuario" placeholder="Nombre de usuario">
+            <input class ="caja" type="text" name="nombreUsuario" placeholder="Nombre de usuario" required pattern="[A-Za-z]+" title="Solo se permiten letras">
+            <span>Digite su nombre de usuario</span>
         </label>
         <br>
         <label> 
             <input class ="caja" type="email" name="email" placeholder="Email">
+            <span>Digite su correo electrónico</span>
         </label>
         <br>
         <label> Fecha de Nacimiento
@@ -59,7 +62,7 @@
                 <label ><input type="checkbox" name="categorias" > vida Sana </label>
         </label>
         <br>
-        <label> Foto:
+        <label class ="foto"> Foto:
             <br>
                 <input type="file" name="foto" accept = ".jpg">
         </label>
