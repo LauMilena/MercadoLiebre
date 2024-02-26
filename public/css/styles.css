@@ -220,36 +220,17 @@ main {
     .main-header-bottom-bar ul{ 
         display: none;
     }   
-    
-    /*input {
-        margin:1rem 0; 
-        width: 80%; 
-        position: relative;
-        border-radius: 5px;
-        border: none;
-        background-color: #ebebeb;
-        padding: 10px;
-        
-      }
 
-    .lupa{
-        display:block;
-        position: absolute;
-        color: black;
-        margin: -30px;
-        margin-right:250px;
-        margin-top: -12px;
-        padding-left:30px;
-        padding-right: 15px;
-        
-      } 
-
-    .buscador{
+    .footer{
         display:flex;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
-        position:relative;
-    }*/
+       
+        
+    }
+    
+    
 
     .main{
         
@@ -298,39 +279,7 @@ main {
         margin:15px;
         margin-left: 0px;
     }
-    /*
-    input {
-        margin: 0;
-        margin-right: 15px;
-        width: 80%; 
-        position: relative;
-        border-radius: 5px;
-        border: none;
-        background-color: #ebebeb;
-        padding: 10px;
-        
-      }
-
-    .lupa{
-        display:block;
-        position: absolute;
-        color: black;
-        margin: -30px;
-        margin-right:40px;
-        margin-top: 4px;
-        padding-left:20vw;
-        padding-right: 0px;
-        
-      } 
-
-    .buscador{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        position:relative;
-        margin-left: 15px;
-    }
-    */
+    
    
     .main-header-top-bar{
         flex-wrap: wrap;
@@ -387,39 +336,7 @@ main {
         width: 30vw;
         margin:10px;
     }
-    /*
-    input {
-        margin: 0;
-        margin-right: 15px;
-        width: 90%; 
-        position: relative;
-        border-radius: 5px;
-        border: none;
-        background-color: #ebebeb;
-        padding: 10px;
-        
-      }
-
-    .lupa{
-        display:block;  
-        position: absolute;
-        color: black;
-        margin: -15px;
-        margin-right:10px;
-        margin-top: 4px;
-        padding-left:0px;
-        padding-right:10px;
-        
-      } 
-
-    .buscador{
-        display:flex;   
-        align-items: center;
-        justify-content: center;
-        position:relative;
-        margin-left: 15px;
-    }
-    */
+    
 
     .main-header-top-bar{
         flex-wrap: nowrap;
@@ -427,7 +344,10 @@ main {
     }
     .copy-header{
         font-size: 18px;
+        margin-left:0px;
     }
+
+    
     .main{
     
         display: flex;  
@@ -449,6 +369,14 @@ main {
         }
     
     }  
+    .footer{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+       
+        
+    }
 }  
 
   
@@ -478,50 +406,25 @@ main {
         width: 30vw;
         margin:15px;
     }
-    /*
-input {
-        margin: 0;
-        margin-right: 15px;
-        max-width: 100%; 
     
-        position: relative;
-        border-radius: 5px;
-        border: none;
-        background-color: #ebebeb;
-        padding: 10px;
-        
-      }
-
-    .lupa{
-        display:block;  
-        position: absolute;
-        color: black;
-        margin: -15px;
-        margin-right:10px;
-        margin-top: 4px;
-        padding-left:0px;
-        padding-right:10px;
-        
-      } 
-
-    .buscador{
-        display:flex;   
-        align-items: center;
-        justify-content: center;
-        position:relative;
-        margin-left: 15px;
-        
-    }*/
     .main-header-top-bar{
         flex-wrap: nowrap;
         justify-content: space-between;
     }
+    
     .copy-header{
         font-size: 18px;
         margin:auto;
         margin-right: 30px;
+        margin-left:0px;
         text-align: right;
     }
+
+    .buscador{
+        width: 100%;
+        margin-left: 120px;
+    }
+    
     .main{
     
         display: flex;  
@@ -549,6 +452,15 @@ input {
         }
     
     }
+
+    .footer{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+       
+        
+    }   
 } 
 
 
