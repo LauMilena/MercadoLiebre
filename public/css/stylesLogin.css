@@ -8,7 +8,7 @@
 body{
     font-family : 'Roboto';
     background-color: white;
-
+  
 
 }
 
@@ -16,6 +16,8 @@ body{
     background-color: #EAC926;
     padding: 20px 0px 0px;
     margin: 0;
+    width: 100vw;
+    
 }
 
 .main-header-top-bar{
@@ -96,7 +98,7 @@ body{
     margin-top: 0;
     margin-bottom: 15%;
     margin-left: 0%;
-    width: 100%;
+    width: 100vw;
     background-color: #ebebeb;
 }
 
@@ -114,7 +116,7 @@ body{
 input{
     border: none;
     border-radius: 5px;
-    width: 280%;
+    width: 200%;
     margin:15px;
     margin-left: 5px;
     padding: 12px;
@@ -142,6 +144,7 @@ footer {
     padding: 10px;
     margin: 10px;  
     text-align: center;  
+    width: 100vw;
 } 
 
 .credit-card, .gift, .security{
@@ -160,3 +163,76 @@ footer {
 .credit-card:hover, .gift:hover, .security:hover{
     color:#39b54a;
 } 
+
+
+@media(min-width: 100px) and (max-width: 700px){
+    .main-header-bottom-bar{
+        display:none;
+    }
+
+    .copy-header{
+        font-weight: 300;
+        font-size:16px;
+        width: 40%;
+        margin-left: 50px;
+        text-align: flex-end;
+        
+    }
+
+    .form{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 15%;
+        margin-left:0%;
+        width: 100vw;
+        background-color: #ebebeb;
+    }
+    .caja-login{
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column; 
+        margin: 10px;
+        margin-left: -135px;
+        padding: 5px; 
+          
+    }
+
+    input{
+        
+        width: 180%;
+        margin:15px;
+        margin-left: 5px;
+        padding: 12px;
+        align-items: center;
+    }
+
+    .enviar{  
+    
+        width: 100%;
+        margin:5px;
+        margin-right:0;
+        margin-left: 80px;
+        padding: 12px;
+       
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(min-width:701px){
+    input{
+        
+        width: 280%;
+        margin:15px;
+        margin-left: 5px;
+        padding: 12px;
+        align-items: center;
+    }
+
+}
